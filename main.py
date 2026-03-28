@@ -45,9 +45,7 @@ for contact in contacts_list[1:]:
 
 contacts_dict = {}
 for contact in file_list[1:]:
-    if contact[1] and contact[2]:
-        key = f'{contact[0]}_{contact[1]}_{contact[2]}'
-    elif contact[1]:
+    if contact[0] and contact[1]:
         key = f'{contact[0]}_{contact[1]}'
     else:
         key = f'{contact[0]}'
